@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration Form</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            color: #333;
+        }
+        h2 {
+            color: #444;
+        }
+        form {
+            width: 600px; /* Adjust width as needed */
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+        legend {
+            color: #666;
+            padding: 0 5px;
+        }
+        .form-row {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .form-label {
+            width: 160px; /* Keeps all labels perfectly aligned */
+            display: inline-block;
+        }
+        .checkbox-grid {
+            display: inline-block;
+        }
+        .checkbox-row {
+            margin-bottom: 5px;
+        }
+        .checkbox-row label {
+            margin-right: 20px;
+        }
+        textarea {
+            width: 250px;
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>User Registration Form</h2>
+
+    <form action="#" method="POST">
+        
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <div class="form-row">
+                <label class="form-label" for="first_name">First Name *</label>
+                <input type="text" id="first_name" name="first_name" required>
+            </div>
+            
+            <div class="form-row">
+                <label class="form-label" for="last_name">Last Name *</label>
+                <input type="text" id="last_name" name="last_name" required>
+            </div>
+            
+            <div class="form-row">
+                <label class="form-label" for="dob">Date of Birth *</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            
+            <div class="form-row">
+                <label class="form-label">Gender *</label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    
+                    <input type="radio" id="other" name="gender" value="other" checked>
+                    <label for="other">Other</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Information</legend>
+            
+            <div class="form-row">
+                <label class="form-label" for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-row">
+                <label class="form-label" for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+            <div class="form-row">
+                <label class="form-label" for="address">Address</label>
+                <textarea id="address" name="address" rows="3" placeholder="Enter your full address..."></textarea>
+            </div>
+            
+            <div class="form-row">
+                <label class="form-label" for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="">-- Select Country --</option>
+                    <option value="US">United States</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="CA">Canada</option>
+                    <option value="AU">Australia</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Account Information</legend>
+            
+            <div class="form-row">
+                <label class="form-label" for="username">Username *</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+            <div class="form-row">
+                <label class="form-label" for="password">Password *</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <div class="form-row">
+                <label class="form-label" for="confirm_password">Confirm Password *</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+            
+            <div class="form-row">
+                <label class="form-label">Interests</label>
+                <div class="checkbox-grid">
+                    <div class="checkbox-row">
+                        <input type="checkbox" id="sports" name="interests" value="sports">
+                        <label for="sports">Sports</label>
+                        
+                        <input type="checkbox" id="music" name="interests" value="music">
+                        <label for="music">Music</label>
+                    </div>
+                    <div class="checkbox-row">
+                        <input type="checkbox" id="reading" name="interests" value="reading">
+                        <label for="reading">Reading</label>
+                        
+                        <input type="checkbox" id="technology" name="interests" value="technology">
+                        <label for="technology">Technology</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">&nbsp;I agree to the Terms and Conditions *</label>
+            </div>
+        </fieldset>
+
+        <div>
+            <button type="submit">Register</button>
+            <button type="reset">Clear Form</button>
+        </div>
+
+    </form>
+
+</body>
+</html>
