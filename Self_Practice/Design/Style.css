@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+}
+
+h1 {
+    color: #333333;
+}
+
+form {
+    width: 650px;
+}
+
+fieldset {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #999999;
+}
+
+legend {
+    font-weight: bold;
+    color: #444444;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 6px;
+}
+
+td:first-child {
+    width: 180px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    width: 230px;
+    padding: 5px;
+    border: 1px solid #999999;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 6px 15px;
+    margin-right: 5px;
+    cursor: pointer;
+}
