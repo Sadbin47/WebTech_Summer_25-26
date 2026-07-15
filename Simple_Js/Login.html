@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>LogIn Page</title>
+        <script src="./Script.js"></script>
+    </head>
+    <body>
+        <h2>Log In Page</h2>
+        <form>
+        <table>
+            <tr>
+                <td><label for="name"> Name: </label></td>
+                <td><input type="text" id="name" name="name" placeholder="Enter Your Name"></td>
+                <td> <p id="NameError"></p></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" placeholder="Enter Your Password"></td>
+                <td> <p id="PasswordError"></p></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="condition" name="condition"></td>
+                <td><label for="condition"><font color="red">I have agreed to terms and condition,</font></label></td>
+                <td> <p id="CheckBoxError"></p></td>
+            </tr>
+        </table>
+        <input type="submit" id="submit" name="submit" value="SignUp" onclick="return collect_data()">
+        <input type="reset" id="reset" name="reset" value="Clear">
+        </form>
+    </body>
+</html>
